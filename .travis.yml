@@ -1,30 +1,16 @@
 language: go
-
 sudo: false
-
 os:
   - linux
   - osx
-
 go:
   - 1.5
   - 1.6
   - tip
-
-before_install:
-  # our 'canonical import path' is gopkg.in-based, not github.com
-  - export CANONICAL_IMPORT=${GOPATH}/src/gopkg.in/kothar/go-backblaze.v0
-  - mkdir -p ${CANONICAL_IMPORT}
-  - rsync -az ${TRAVIS_BUILD_DIR}/ ${CANONICAL_IMPORT}/
-  - cd ${CANONICAL_IMPORT}
-  - rm -rf ${TRAVIS_BUILD_DIR}
-  - export TRAVIS_BUILD_DIR=${CANONICAL_IMPORT}
-
 install:
  - go get ./...
  - go get -u github.com/golang/lint/golint
  - go get -u golang.org/x/tools/cmd/goimports
-
 script:
  - go vet ./...
  - diff <(goimports -l . | grep -v _ffjson.go) <(printf "")

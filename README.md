@@ -1,5 +1,5 @@
 # go-backblaze
-[![GoDoc](https://godoc.org/gopkg.in/kothar/go-backblaze.v0?status.svg)](https://godoc.org/gopkg.in/kothar/go-backblaze.v0)
+[![GoDoc](https://godoc.org/gitub.com/peterdemartini/go-backblaze?status.svg)](https://godoc.org/gitub.com/peterdemartini/go-backblaze)
 [![Build Status](https://travis-ci.org/kothar/go-backblaze.svg)](https://travis-ci.org/kothar/go-backblaze)
 
 A golang client for Backblaze's B2 storage
@@ -10,7 +10,7 @@ Some simple examples to get you started. Errors are ommitted for brevity
 
 Import the API package
 ~~~
-import "gopkg.in/kothar/go-backblaze.v0"
+import "gitub.com/peterdemartini/go-backblaze"
 ~~~
 
 Create an API client
@@ -48,7 +48,7 @@ It should provide you with more examples of how to use the API in your own appli
 
 To install the b2 command, use:
 
-`go install gopkg.in/kothar/go-backblaze.v0/b2`
+`go install gitub.com/peterdemartini/go-backblaze/b2`
 
 ~~~
 $ b2 --help
@@ -77,5 +77,5 @@ Available commands:
 
 ## Links
 
-* GoDoc: [https://godoc.org/gopkg.in/kothar/go-backblaze.v0](https://godoc.org/gopkg.in/kothar/go-backblaze.v0)
+* GoDoc: [https://godoc.org/gitub.com/peterdemartini/go-backblaze](https://godoc.org/gitub.com/peterdemartini/go-backblaze)
 * Originally based on pH14's work on the API: [https://github.com/pH14/go-backblaze](https://github.com/pH14/go-backblaze)
